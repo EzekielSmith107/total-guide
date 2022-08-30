@@ -1,5 +1,6 @@
 package com.ezekiel.armyBuilder.entities;
 
+import com.ezekiel.armyBuilder.dtos.MatchupDto;
 import lombok.*;
 import org.hibernate.Hibernate;
 
@@ -26,6 +27,15 @@ public class Matchup {
 
     @OneToOne
     private Build build;
+
+    public Matchup(MatchupDto matchupDto) {
+        if(matchupDto.getFaction() != null) {
+            this.faction = matchupDto.getFaction();
+        }
+        if(matchupDto.getOpponent() != null) {
+            this.opponent = matchupDto.getOpponent();
+        }
+    }
 
     @Override
     public boolean equals(Object o) {

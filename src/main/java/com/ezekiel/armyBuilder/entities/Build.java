@@ -1,5 +1,6 @@
 package com.ezekiel.armyBuilder.entities;
 
+import com.ezekiel.armyBuilder.dtos.BuildDto;
 import lombok.*;
 import org.hibernate.Hibernate;
 
@@ -23,6 +24,12 @@ public class Build {
 
     @OneToOne(mappedBy = "build", cascade = CascadeType.ALL, orphanRemoval = true)
     private Matchup matchup;
+
+    public Build(BuildDto buildDto) {
+        if(buildDto.getImage() != null) {
+            this.image = buildDto.getImage();
+        }
+    }
 
     @Override
     public boolean equals(Object o) {
