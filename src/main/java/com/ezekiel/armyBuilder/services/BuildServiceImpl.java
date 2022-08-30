@@ -23,4 +23,10 @@ public class BuildServiceImpl {
         response.add("Build added successfully.");
         return response;
     }
+//    image = string
+//    "SELECT image
+//     FROM builds
+//       JOIN matchups ON builds.id = matchups.build_id
+//     WHERE matchups.faction = ?1 AND matchups.opponent = ?2"
+    // nested if statement
 }
