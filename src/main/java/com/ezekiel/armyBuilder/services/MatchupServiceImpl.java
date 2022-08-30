@@ -14,12 +14,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class MatchupServiceImpl {
+public class MatchupServiceImpl implements MatchupService {
     @Autowired
     private MatchupRepository matchupRepository;
     @Autowired
     private BuildRepository buildRepository;
 
+    @Override
     @Transactional
     public List<String> addMatchup(MatchupDto matchupDto, Long buildId) {
         List<String> response = new ArrayList<>();
