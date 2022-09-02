@@ -4,8 +4,8 @@ import classes from './Navbar.module.css'
 
 const Navbar = () => {
   return (
-    <div>
-        <div className={classes.nav}>
+    <div className={classes.nav}>
+        <div>
             <div className={classes.navbarContainer}>
                 <p className={classes.navLogo}>The Gentle Rat</p>
                 <div className={classes.navItem}>
