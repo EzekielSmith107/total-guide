@@ -1,0 +1,32 @@
+img {
+    height: 40%;
+    width: 40%;
+    padding: 1rem 1rem;
+    border-radius: 25%;
+}
+
+.guidelineContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40%;
+    width: 40%;
+    padding: 1rem 1rem;
+}
+
+.keypairContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
