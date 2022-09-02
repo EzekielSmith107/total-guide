@@ -1,4 +1,4 @@
-img {
+.image {
     height: 40%;
     width: 40%;
     padding: 1rem 1rem;
@@ -10,7 +10,9 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 2rem;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .textContainer {

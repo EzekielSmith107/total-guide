@@ -1,0 +1,63 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+    height: 100vh;
+    background-color: black;
+}
+
+select {
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: antiquewhite;
+    background-image: none;
+    flex: 1;
+    padding: 0 0.5em;
+    color: green;
+    cursor: pointer;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background-color: antiquewhite;
+    overflow: hidden;
+    border-radius: .25em;
+    font-size: 1em;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: wheat;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+
+.select:hover::after {
+    color: antiquewhite;
+}
+
+.selectContainer {
+    display: flex;
+    margin-top: 2rem;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.armyBuild {
+    width: 50%;
+    height: 40%;
+    padding-top: 2rem;
+}

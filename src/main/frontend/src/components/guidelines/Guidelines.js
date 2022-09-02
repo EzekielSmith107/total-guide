@@ -11,7 +11,7 @@ const Guidelines = () => {
   return (
     <div className={classes.guidelineContainer}>
         <div className={classes.keypairContainer}>
-            <img src={testImageOne} alt='Total War Warhammer Battle' />
+            <img src={testImageOne} alt='Total War Warhammer Battle' className={classes.image} />
             <div className={classes.textContainer}>
                 <h1>Overview</h1>
                 <p>This is some placeholder text about the overview. Here I will write about the reason for the general guidelines and constraints. We will discuss my thought process for developing the guidelines and what I hope to achieve. I am excited to get this portion of my website setup so I can continue to work on other areas and get the general feel set for the website in general.</p>
@@ -23,11 +23,11 @@ const Guidelines = () => {
                 <h1>Heroes</h1>
                 <p>This is some placeholder text about the overview. Here I will write about the reason for the general guidelines and constraints. We will discuss my thought process for developing the guidelines and what I hope to achieve. I am excited to get this portion of my website setup so I can continue to work on other areas and get the general feel set for the website in general.</p>
             </div>
-            <img src={testImageTwo} alt='Total War Warhammer Hero' />
+            <img src={testImageTwo} alt='Total War Warhammer Hero' className={classes.image} />
         </div>
 
         <div className={classes.keypairContainer}>
-            <img src={testImageThree} alt='Total War Warhammer Infantry' />
+            <img src={testImageThree} alt='Total War Warhammer Infantry' className={classes.image} />
             <div className={classes.textContainer}>
                 <h1>Infantry and Monstrous Infantry</h1>
                 <p>This is some placeholder text about the overview. Here I will write about the reason for the general guidelines and constraints. We will discuss my thought process for developing the guidelines and what I hope to achieve. I am excited to get this portion of my website setup so I can continue to work on other areas and get the general feel set for the website in general.</p>
@@ -39,11 +39,11 @@ const Guidelines = () => {
                 <h1>Calvary</h1>
                 <p>This is some placeholder text about the overview. Here I will write about the reason for the general guidelines and constraints. We will discuss my thought process for developing the guidelines and what I hope to achieve. I am excited to get this portion of my website setup so I can continue to work on other areas and get the general feel set for the website in general.</p>
             </div>
-            <img src={testImageFour} alt='Total War Warhammer Calvary' />
+            <img src={testImageFour} alt='Total War Warhammer Calvary' className={classes.image} />
         </div>
 
         <div className={classes.keypairContainer}>
-            <img src={testImageFive} alt='Total War Warhammer Artillary' />
+            <img src={testImageFive} alt='Total War Warhammer Artillary' className={classes.image} />
             <div className={classes.textContainer}>
                 <h1>Archers and Artillary</h1>
                 <p>This is some placeholder text about the overview. Here I will write about the reason for the general guidelines and constraints. We will discuss my thought process for developing the guidelines and what I hope to achieve. I am excited to get this portion of my website setup so I can continue to work on other areas and get the general feel set for the website in general.</p>
@@ -55,7 +55,7 @@ const Guidelines = () => {
                 <h1>Single Entity Monsters</h1>
                 <p>This is some placeholder text about the overview. Here I will write about the reason for the general guidelines and constraints. We will discuss my thought process for developing the guidelines and what I hope to achieve. I am excited to get this portion of my website setup so I can continue to work on other areas and get the general feel set for the website in general.</p>
             </div>
-            <img src={testImageSix} alt='Total War Warhammer III Monster' />
+            <img src={testImageSix} alt='Total War Warhammer III Monster' className={classes.image} />
         </div>
     </div>
   )
