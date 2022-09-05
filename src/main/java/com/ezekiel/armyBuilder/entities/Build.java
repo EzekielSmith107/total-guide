@@ -3,6 +3,7 @@ package com.ezekiel.armyBuilder.entities;
 import com.ezekiel.armyBuilder.dtos.BuildDto;
 import lombok.*;
 import org.hibernate.Hibernate;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -19,6 +20,8 @@ public class Build {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Lob
+    @Type(type = "org.hibernate.type.TextType")
     @Column
     private String image;
 
