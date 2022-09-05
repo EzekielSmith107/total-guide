@@ -1,15 +1,37 @@
 import React from 'react'
+import { useForm } from 'react-hook-form'
 import classes from './Generator.module.css'
-import testImageSeven from '../../images/testImageSeven.jpg'
 
 const Generator = () => {
-  return (
+    const { register, handleSubmit, formState: { errors }} = useForm()
+    const army = document.getElementById('armyBuild')
+
+    async function getImage(data) {
+        let faction = data.faction
+        let opponent = data.opponent
+        const headers = {
+            'Content-Type': 'application/json'
+        }
+        await fetch(`http://localhost:8080/image?faction=${faction}&opponent=${opponent}`, {
+            method: "GET",
+            headers: headers
+        })
+        .then(res => res.json)
+        .then(data => army.src = `${data}`)
+        .catch(err => console.error(err))
+    }
+
+    const onSubmit = (data) => {
+        getImage(data)
+    }
+
+    return (
     <div className={classes.formContainer}>
         <h1>Army Generator</h1>
-        <div className={classes.selectContainer}>
+        <form onSubmit={handleSubmit(onSubmit)} className={classes.selectContainer}>
             <div className={classes.select}>
-                <select name='faction' id='faction'>
-                    <option selected disabled>Choose your faction</option>
+                <select name='faction' id='faction' {...register('faction')}>
+                    <option disabled>Choose your faction</option>
                     <option value='beastmen'>Beastmen</option>
                     <option value='bretonnia'>Bretonnia</option>
                     <option value='dark elves'>Dark Elves</option>
@@ -33,10 +55,11 @@ const Generator = () => {
                     <option value='warriors of chaos'>Warriors of Chaos</option>
                     <option value='wood elves'>Wood Elves</option>
                 </select>
+                { errors.faction && errors.faction.message }
             </div>
             <div className={classes.select}>
-                <select name='opponent' id='opponent'>
-                    <option selected disabled>Choose your opponent</option>
+                <select name='opponent' id='opponent' {...register('opponent')}>
+                    <option disabled>Choose your opponent</option>
                     <option value='beastmen'>Beastmen</option>
                     <option value='bretonnia'>Bretonnia</option>
                     <option value='dark elves'>Dark Elves</option>
@@ -60,9 +83,11 @@ const Generator = () => {
                     <option value='warriors of chaos'>Warriors of Chaos</option>
                     <option value='wood elves'>Wood Elves</option>
                 </select>
+                { errors.opponent && errors.opponent.message }
             </div>
-        </div>
-        <img src={testImageSeven} alt='Test Army Build' className={classes.armyBuild}></img>
+            <button>Generate Army</button>
+        </form>
+        <img src='' alt='Army Build' id='armyBuild' className={classes.armyBuild}></img>
     </div>
     
   )
