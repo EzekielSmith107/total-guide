@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import classes from './Generator.module.css'
 
 const Generator = () => {
     const { register, handleSubmit, formState: { errors }} = useForm()
-    const army = document.getElementById('armyBuild')
+    const [image, setImage] = useState('')
 
     async function getImage(data) {
         let faction = data.faction
@@ -12,12 +12,12 @@ const Generator = () => {
         const headers = {
             'Content-Type': 'application/json'
         }
-        await fetch(`http://localhost:8080/image?faction=${faction}&opponent=${opponent}`, {
+        await fetch(`http://localhost:3000/builds/image?faction=${faction}&opponent=${opponent}`, {
             method: "GET",
             headers: headers
         })
-        .then(res => res.json)
-        .then(data => army.src = `${data}`)
+        .then(response => response.json())
+        .then(data => setImage(data[0]))
         .catch(err => console.error(err))
     }
 
@@ -87,7 +87,7 @@ const Generator = () => {
             </div>
             <button>Generate Army</button>
         </form>
-        <img src='' alt='Army Build' id='armyBuild' className={classes.armyBuild}></img>
+        <img src={image} alt='Army Build' id='armyBuild' className={classes.armyBuild}></img>
     </div>
     
   )
