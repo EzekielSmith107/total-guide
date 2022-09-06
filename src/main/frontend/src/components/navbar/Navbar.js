@@ -7,21 +7,21 @@ const Navbar = () => {
   return (
     <div className={classes.nav}>
         <div>
-            <div className={classes.navbarContainer}>
-                <Link className={classes.navLogo} activeClass="active" to="home" spy={true} smooth={true} offset={-80} duration={500}>The Gentle Rat</Link>
-                <div className={classes.navItem}>
-                    <Link className={classes.navLinks} activeClass="active" to="guidelines" spy={true} smooth={true} offset={-80} duration={500}>Guidelines</Link>
-                </div>
-                <div className={classes.navItem}>
-                    <Link className={classes.navLinks} activeClass="active" to="cheatsheet" spy={true} smooth={true} offset={-80} duration={500}>Cheatsheet</Link>
-                </div>
-                <div className={classes.navItem}>
-                    <Link className={classes.navLinks} activeClass="active" to="generator" spy={true} smooth={true} offset={-80} duration={500}>Generator</Link>
-                </div>
-                <div className={classes.navItem}>
-                    <Link className={classes.navLinks} activeClass="active" to="resources" spy={true} smooth={true} offset={-80} duration={500}>Resources</Link>
-                </div>
-            </div>
+            <ul className={classes.navbarContainer}>
+                <Link className={classes.navLogo} to="home" spy={true} smooth={true} offset={-80} duration={500}>The Gentle Rat</Link>
+                <li className={classes.navItem}>
+                    <Link className={classes.navLinks} to="guidelines" spy={true} smooth={true} offset={-80} duration={500}>Guidelines</Link>
+                </li>
+                <li className={classes.navItem}>
+                    <Link className={classes.navLinks} to="cheatsheet" spy={true} smooth={true} offset={-80} duration={500}>Cheatsheet</Link>
+                </li>
+                <li className={classes.navItem}>
+                    <Link className={classes.navLinks} to="generator" spy={true} smooth={true} offset={-80} duration={500}>Generator</Link>
+                </li>
+                <li className={classes.navItem}>
+                    <Link className={classes.navLinks} to="resources" spy={true} smooth={true} offset={-80} duration={500}>Resources</Link>
+                </li>
+            </ul>
         </div>
     </div>
   )

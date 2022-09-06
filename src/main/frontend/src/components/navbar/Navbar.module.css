@@ -49,17 +49,10 @@
     padding: 1 1rem;
     height: 70%;
     cursor: pointer;
-}
-
-.navLinks:active {
-    border-bottom: 3px solid #fff;
+    font-size: large;
 }
 
 .navLinks:hover {
-    border-bottom: 3px solid #fff;
-}
-
-.navLogo:active {
     border-bottom: 3px solid #fff;
 }
 
