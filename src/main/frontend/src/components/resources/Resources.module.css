@@ -8,8 +8,7 @@
 
 .introContainer {
     display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
@@ -17,8 +16,7 @@
 
 .youtubeContainer {
     display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 33%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 33%;
@@ -26,8 +24,7 @@
 
 .discordContainer {
     display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 33%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 33%;
@@ -35,23 +32,15 @@
 
 .twitchContainer {
     display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 33%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 33%;
-}
-
-.heading {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .textBox {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 75%;
 }

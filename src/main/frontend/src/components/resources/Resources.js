@@ -5,20 +5,41 @@ const Resources = () => {
   return (
     <div className={classes.resourceContainer} id='resources'>
         <div className={classes.introContainer}>
-            <h1 className={classes.heading}>Reinforcements have Arrived!</h1>
-            <p className={classes.textBox}>This is were a small paragraph will go to introduce the page. This is a test to see how a video will work on my home page. My goal is to offer a modern and interactive site for my community memebers. I hope that CA will be happy with the work and content that I've produced and will be glad to sponser the site. I can offer my site as a way to gather new players for total war multiplayer. I am so excited to deliver this to the public.</p>
+            <h1>Reinforcements have Arrived!</h1>
+            <p className={classes.textBox}>Fear not! For you will not have to rely solely on my rat ramblings. Below I have assembled some of my favorite creators and content hubs for you to browse and explore. I highly suggest using these resources to plug yourself into the community and enjoy some like-minded friendship. The focus of each of these resources varies, but I hope you will find something you enjoy in the mix. Happy hunting!</p>
         </div>
         <div className={classes.youtubeContainer}>
-            <h1 className={classes.heading}>Youtube</h1>
-            <p className={classes.textBox}>This is were a small paragraph will go to introduce the page. This is a test to see how a video will work on my home page. My goal is to offer a modern and interactive site for my community memebers. I hope that CA will be happy with the work and content that I've produced and will be glad to sponser the site. I can offer my site as a way to gather new players for total war multiplayer. I am so excited to deliver this to the public.</p>
+            <h1>Youtube</h1>
+            <div>
+                <p className={classes.textBox}></p>
+                <ul>
+                    <li>Example 1</li>
+                    <li>Example 2</li>
+                    <li>Example 3</li>
+                </ul>
+            </div>
         </div>
         <div className={classes.discordContainer}>
-            <h1 className={classes.heading}>Discord</h1>
-            <p className={classes.textBox}>This is were a small paragraph will go to introduce the page. This is a test to see how a video will work on my home page. My goal is to offer a modern and interactive site for my community memebers. I hope that CA will be happy with the work and content that I've produced and will be glad to sponser the site. I can offer my site as a way to gather new players for total war multiplayer. I am so excited to deliver this to the public.</p>
+            <h1>Discord</h1>
+            <div>
+                <p className={classes.textBox}></p>
+                <ul>
+                    <li>Example 1</li>
+                    <li>Example 2</li>
+                    <li>Example 3</li>
+                </ul>
+            </div>
         </div>
         <div className={classes.twitchContainer}>
-            <h1 className={classes.heading}>Twitch</h1>
-            <p className={classes.textBox}>This is were a small paragraph will go to introduce the page. This is a test to see how a video will work on my home page. My goal is to offer a modern and interactive site for my community memebers. I hope that CA will be happy with the work and content that I've produced and will be glad to sponser the site. I can offer my site as a way to gather new players for total war multiplayer. I am so excited to deliver this to the public.</p>
+            <h1>Twitch</h1>
+            <div>
+                <p className={classes.textBox}></p>
+                <ul>
+                    <li>Example 1</li>
+                    <li>Example 2</li>
+                    <li>Example 3</li>
+                </ul>
+            </div>
         </div>
     </div>
   )
