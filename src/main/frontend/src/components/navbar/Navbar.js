@@ -13,7 +13,7 @@ const Navbar = () => {
                     <Link className={classes.navLinks} to="guidelines" spy={true} smooth={true} offset={-90} duration={500}>Guidelines</Link>
                 </li>
                 <li className={classes.navItem}>
-                    <Link className={classes.navLinks} to="cheatsheet" spy={true} smooth={true} offset={-90} duration={500}>Cheatsheet</Link>
+                    <Link className={classes.navLinks} to="cheatsheet" spy={true} smooth={true} offset={-90} duration={500}>Cheat Sheet</Link>
                 </li>
                 <li className={classes.navItem}>
                     <Link className={classes.navLinks} to="generator" spy={true} smooth={true} offset={-90} duration={500}>Generator</Link>
