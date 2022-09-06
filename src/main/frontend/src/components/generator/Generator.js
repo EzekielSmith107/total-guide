@@ -52,8 +52,8 @@ const Generator = () => {
                     <option value='tzeentch'>Tzeentch</option>
                     <option value='vampire coast'>Vampire Coast</option>
                     <option value='vampire counts'>Vampire Counts</option>
-                    <option value='warriors of chaos'>Warriors of Chaos</option>
                     <option value='wood elves'>Wood Elves</option>
+                    <option value='warriors of chaos'>Warriors of Chaos</option>
                 </select>
                 { errors.faction && errors.faction.message }
             </div>
@@ -80,8 +80,8 @@ const Generator = () => {
                     <option value='tzeentch'>Tzeentch</option>
                     <option value='vampire coast'>Vampire Coast</option>
                     <option value='vampire counts'>Vampire Counts</option>
-                    <option value='warriors of chaos'>Warriors of Chaos</option>
                     <option value='wood elves'>Wood Elves</option>
+                    <option value='warriors of chaos'>Warriors of Chaos</option>
                 </select>
                 { errors.opponent && errors.opponent.message }
             </div>
