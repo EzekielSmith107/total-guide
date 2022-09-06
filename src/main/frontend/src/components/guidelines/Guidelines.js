@@ -9,7 +9,7 @@ import testImageSix from '../../images/testImageSix.jpg'
 
 const Guidelines = () => {
   return (
-    <div className={classes.guidelineContainer}>
+    <div className={classes.guidelineContainer} id='guidelines'>
         <div className={classes.keypairContainer}>
             <img src={testImageOne} alt='Total War Warhammer Battle' className={classes.image} />
             <div className={classes.textContainer}>

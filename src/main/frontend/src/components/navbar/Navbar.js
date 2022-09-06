@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 import classes from './Navbar.module.css'
 
@@ -7,18 +8,18 @@ const Navbar = () => {
     <div className={classes.nav}>
         <div>
             <div className={classes.navbarContainer}>
-                <p className={classes.navLogo}>The Gentle Rat</p>
+                <Link className={classes.navLogo} activeClass="active" to="home" spy={true} smooth={true} offset={-80} duration={500}>The Gentle Rat</Link>
                 <div className={classes.navItem}>
-                    <h2 className={classes.navLinks}>Guidelines</h2>
+                    <Link className={classes.navLinks} activeClass="active" to="guidelines" spy={true} smooth={true} offset={-80} duration={500}>Guidelines</Link>
                 </div>
                 <div className={classes.navItem}>
-                    <h2 className={classes.navLinks}>Cheatsheet</h2>
+                    <Link className={classes.navLinks} activeClass="active" to="cheatsheet" spy={true} smooth={true} offset={-80} duration={500}>Cheatsheet</Link>
                 </div>
                 <div className={classes.navItem}>
-                    <h2 className={classes.navLinks}>Generator</h2>
+                    <Link className={classes.navLinks} activeClass="active" to="generator" spy={true} smooth={true} offset={-80} duration={500}>Generator</Link>
                 </div>
                 <div className={classes.navItem}>
-                    <h2 className={classes.navLinks}>Resources</h2>
+                    <Link className={classes.navLinks} activeClass="active" to="resources" spy={true} smooth={true} offset={-80} duration={500}>Resources</Link>
                 </div>
             </div>
         </div>

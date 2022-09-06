@@ -4,7 +4,7 @@ import classes from './Home.module.css'
 
 const Home = () => {
   return (
-    <div className={classes.homeContainer}>
+    <div className={classes.homeContainer} id='home'>
         <div className={classes.overlay}></div>
         <video src={testVideo} autoPlay loop muted />
             <div className={classes.content}>

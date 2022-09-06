@@ -26,7 +26,7 @@ const Generator = () => {
     }
 
     return (
-    <div className={classes.formContainer}>
+    <div className={classes.formContainer} id='generator'>
         <h1>Army Generator</h1>
         <form onSubmit={handleSubmit(onSubmit)} className={classes.selectContainer}>
             <div className={classes.select}>
