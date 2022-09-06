@@ -5,6 +5,7 @@ import Home from "./components/home/Home";
 import Guidelines from "./components/guidelines/Guidelines";
 import Cheatsheet from "./components/cheatsheet/Cheatsheet";
 import Generator from "./components/generator/Generator";
+import Resources from "./components/resources/Resources";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Guidelines />
       <Cheatsheet />
       <Generator />
+      <Resources />
     </div>
   );
 }

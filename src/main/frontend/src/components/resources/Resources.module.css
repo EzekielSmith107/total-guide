@@ -1,0 +1,58 @@
+.resourceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    height: 100vh;
+}
+
+.introContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.youtubeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 33%;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.discordContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 33%;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.twitchContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 33%;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
