@@ -3,3 +3,7 @@ body {
     color: antiquewhite;
     margin: 0;
 }
+
+.active {
+    border-bottom: 3px solid #fff;
+}
