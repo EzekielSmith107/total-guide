@@ -6,6 +6,18 @@
     height: 100vh;
 }
 
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listContainer a {
+    font-size: large;
+    color: white;
+    line-height: 2em;
+}
+
 .introContainer {
     display: flex;
     flex-direction: column;
@@ -17,30 +29,27 @@
 .youtubeContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 100%;
     width: 33%;
 }
 
 .discordContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 100%;
     width: 33%;
 }
 
 .twitchContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 100%;
     width: 33%;
 }
 
 .textBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 75%;
 }

@@ -15,7 +15,7 @@ select {
     background: antiquewhite;
     background-image: none;
     flex: 1;
-    padding: 0 0.5em;
+    padding: 0 1rem;
     color: green;
     cursor: pointer;
 }
@@ -51,7 +51,7 @@ select {
 .selectContainer {
     display: flex;
     margin-top: 2rem;
-    width: 50%;
+    width: 75%;
     justify-content: space-around;
 }
 
@@ -59,4 +59,8 @@ select {
     width: 80%;
     height: 30%;
     padding-top: 2rem;
+}
+
+.generatorText {
+    width: 75%;
 }

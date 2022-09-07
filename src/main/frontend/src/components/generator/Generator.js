@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import classes from './Generator.module.css'
+import loadImage from '../../images/loadImage.png'
 
 const Generator = () => {
     const { register, handleSubmit, formState: { errors }} = useForm()
@@ -28,6 +29,7 @@ const Generator = () => {
     return (
     <div className={classes.formContainer} id='generator'>
         <h1>Army Generator</h1>
+        <p className={classes.generatorText}>The army generator is a tool to help new players try out a faction or begin having fun in some amazing multiplayer battles without having to worry about an army build. These builds are all made using the general guidelines from above. The purpose of each build is not to show an "optimal" list, but to have a good variety of units to control for players to learn different aspects of the game. Feel free to use the builds as inspiration for your own lists. Legendary lords and spellcasters can be swapped depending on your needs and feel free to add or subtract any units you want to make it you own.</p>
         <form onSubmit={handleSubmit(onSubmit)} className={classes.selectContainer}>
             <div className={classes.select}>
                 <select name='faction' id='faction' {...register('faction')}>
@@ -87,7 +89,7 @@ const Generator = () => {
             </div>
             <button>Generate Army</button>
         </form>
-        <img src={image} alt='Army Build' id='armyBuild' className={classes.armyBuild}></img>
+        <img src={image || loadImage} alt='Army Build' id='armyBuild' className={classes.armyBuild}></img>
     </div>
     
   )

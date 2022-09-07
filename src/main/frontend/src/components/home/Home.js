@@ -1,4 +1,3 @@
-import React from 'react'
 import testVideo from '../../videos/testVideo.mp4'
 import classes from './Home.module.css'
 

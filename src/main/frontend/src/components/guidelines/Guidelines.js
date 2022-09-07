@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './Guidelines.module.css'
 import testImageOne from '../../images/testImageOne.jpg'
 import testImageTwo from '../../images/testImageTwo.jpg'
@@ -6,16 +5,19 @@ import testImageThree from '../../images/testImageThree.jpg'
 import testImageFour from '../../images/testImageFour.jpg'
 import testImageFive from '../../images/testImageFive.jpg'
 import testImageSix from '../../images/testImageSix.jpg'
+import Card from '../card/Card'
 
 const Guidelines = () => {
   return (
     <div className={classes.guidelineContainer} id='guidelines'>
         <div className={classes.keypairContainer}>
             <img src={testImageOne} alt='Total War Warhammer Battle' className={classes.image} />
-            <div className={classes.textContainer}>
-                <h1>Overview</h1>
-                <p>One of the biggest barriers of entry to multiplayer battles is building the right army. Army composition plays a huge part in Total War land battles, so these guidelines are meant to give new players some tips to follow for building their first army. The current area of focus for this site is the Warhammer trilogy, but many of these tips may be applied to historical titles as well. Please enjoy the cheat sheet at the end for a concise summary of my build guidelines.</p>
-            </div>
+            <Card>
+                <div className={classes.textContainer}>
+                    <h1>Overview</h1>
+                    <p>One of the biggest barriers of entry to multiplayer battles is building the right army. Army composition plays a huge part in Total War land battles, so these guidelines are meant to give new players some tips to follow for building their first army. The current area of focus for this site is the Warhammer trilogy, but many of these tips may be applied to historical titles as well. Please enjoy the cheat sheet at the end for a concise summary of my build guidelines.</p>
+                </div>
+            </Card>
         </div>
 
         <div className={classes.keypairContainer}>
