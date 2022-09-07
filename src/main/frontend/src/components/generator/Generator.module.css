@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 85vh;
     background-color: #181d2a;
 }
 
@@ -12,7 +12,7 @@ select {
     outline: 0;
     box-shadow: none;
     border: 0 !important;
-    background: #95d3e9;
+    background: white;
     background-image: none;
     flex: 1;
     padding: 0 1rem;
@@ -53,6 +53,7 @@ select {
     margin-top: 2rem;
     width: 75%;
     justify-content: space-around;
+    align-items: center;
 }
 
 .armyBuild {
@@ -63,4 +64,22 @@ select {
 
 .generatorText {
     width: 75%;
+}
+
+.generateBtn {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    color: #2e74b7;
+    transition: 0.25s;
+}
+
+.generateBtn:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em #95d3e9;
+    transform: translateY(-0.25em);
+    border-color: #95d3e9;
+    color: white;
 }

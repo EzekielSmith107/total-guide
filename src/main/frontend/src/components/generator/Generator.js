@@ -87,7 +87,7 @@ const Generator = () => {
                 </select>
                 { errors.opponent && errors.opponent.message }
             </div>
-            <button>Generate Army</button>
+            <button className={classes.generateBtn}>Generate Army</button>
         </form>
         <img src={image || loadImage} alt='Army Build' id='armyBuild' className={classes.armyBuild}></img>
     </div>

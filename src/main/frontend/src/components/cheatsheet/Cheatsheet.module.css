@@ -3,36 +3,32 @@ iframe {
 }
 
 .downloadBtn {
-    margin: 0rem 2rem 2rem 2rem;
-    border-color: #3498db;
-    color: #fff;
-    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
-    transition: all 150ms ease-in-out;
-    height: 4rem;
-    width: 20rem;
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    color: #2e74b7;
+    transition: 0.25s;
 }
 
 .downloadBtn:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-}
-
-.textContainer {
-    width: 75%;
+    box-shadow: 0 0.5em 0.5em -0.4em #95d3e9;
+    transform: translateY(-0.25em);
+    border-color: #95d3e9;
+    color: white;
 }
 
 .cheatsheetContainer {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-color: #181d2a;
-    height: 100%;
-    width: 100%;
+    align-items: center;
 }
 
-.showcaseContainer {
+.cardContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    height: 85vh;
+    width: 75%;
 }

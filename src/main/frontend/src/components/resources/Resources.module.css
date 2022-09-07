@@ -3,13 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.contentContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 85vh;
 }
 
 .listContainer a {
@@ -26,28 +20,12 @@
     margin-top: 3rem;
 }
 
-.youtubeContainer {
+.siteContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 33%;
-}
-
-.discordContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 33%;
-}
-
-.twitchContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 33%;
+    width: 33.3%;
 }
 
 .textBox {

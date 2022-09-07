@@ -1,14 +1,14 @@
 .border {
-    font-size: 1.6rem;
+    font-size: 1rem;
 	display: grid;
 	place-items: center;
 	min-height: 200px;
-	border: 8px solid;
+	border: 5px solid;
 	padding: 1rem;
     position: relative;
 	background: #181d2a;
     background-clip: padding-box;
-	border: solid 8px transparent;
+	border: solid 5px transparent;
 	border-radius: 0.8rem;
 }
 
@@ -20,7 +20,7 @@
 	bottom: 0;
 	left: 0;
 	z-index: -1;
-	margin: -8px;
+	margin: -5px;
 	border-radius: inherit;
 	background: linear-gradient(to left, #2e74b7, #95d3e9);
 }
