@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: darkslateblue;
+    background-color: #181d2a;
 }
 
 select {
@@ -12,11 +12,11 @@ select {
     outline: 0;
     box-shadow: none;
     border: 0 !important;
-    background: antiquewhite;
+    background: #95d3e9;
     background-image: none;
     flex: 1;
     padding: 0 1rem;
-    color: green;
+    color: #181d2a;
     cursor: pointer;
 }
 
@@ -26,7 +26,7 @@ select {
     width: 20em;
     height: 3em;
     line-height: 3;
-    background-color: antiquewhite;
+    background-color: #2e74b7;
     overflow: hidden;
     border-radius: .25em;
     font-size: 1em;
@@ -38,14 +38,14 @@ select {
     top: 0;
     right: 0;
     padding: 0 1em;
-    background: wheat;
+    background: #2e74b7;
     cursor: pointer;
     pointer-events: none;
     transition: .25s all ease;
 }
 
 .select:hover::after {
-    color: antiquewhite;
+    color: white;
 }
 
 .selectContainer {

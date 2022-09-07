@@ -6,7 +6,7 @@
 	border: 8px solid;
 	padding: 1rem;
     position: relative;
-	background: #fff;
+	background: #181d2a;
     background-clip: padding-box;
 	border: solid 8px transparent;
 	border-radius: 0.8rem;
@@ -22,5 +22,5 @@
 	z-index: -1;
 	margin: -8px;
 	border-radius: inherit;
-	background: linear-gradient(to left, turquoise, greenyellow);
+	background: linear-gradient(to left, #2e74b7, #95d3e9);
 }
