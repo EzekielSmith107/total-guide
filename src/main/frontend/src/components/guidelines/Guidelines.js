@@ -1,17 +1,17 @@
 import classes from './Guidelines.module.css'
-import testImageOne from '../../images/testImageOne.jpg'
-import testImageTwo from '../../images/testImageTwo.jpg'
-import testImageThree from '../../images/testImageThree.jpg'
-import testImageFour from '../../images/testImageFour.jpg'
-import testImageFive from '../../images/testImageFive.jpg'
-import testImageSix from '../../images/testImageSix.jpg'
 import Card from '../card/Card'
+import archers from '../../images/archers.png'
+import calvary from '../../images/calvary.png'
+import heroes from '../../images/heroes.png'
+import infantry from '../../images/infantry.png'
+import monsters from '../../images/monsters.png'
+import overview from '../../images/overview.png'
 
 const Guidelines = () => {
   return (
     <div className={classes.guidelineContainer} id='guidelines'>
         <div className={classes.keypairContainer}>
-            <img src={testImageOne} alt='Total War Warhammer Battle' className={classes.image} />
+            <img src={overview} alt='Total War Warhammer Battle' className={classes.image} />
                 <div className={classes.textContainer}>
                     <Card>
                         <h1>Overview</h1>
@@ -27,11 +27,11 @@ const Guidelines = () => {
                     <p>Heroes have been a recent introduction to Total War and have been a focal point of army builds since their arrival. Because of various penalities that apply to your army if your general routes, I believe that newer players should tend to stick with tougher heroes that are more forgiving if mistakes are made. As a result, I suggest using a tanky, melee lord paired with a mage on a mobile mount to begin your army builds.</p>
                 </Card>
             </div>
-            <img src={testImageTwo} alt='Total War Warhammer Hero' className={classes.image} />
+            <img src={heroes} alt='Total War Warhammer Hero' className={classes.image} />
         </div>
 
         <div className={classes.keypairContainer}>
-            <img src={testImageThree} alt='Total War Warhammer Infantry' className={classes.image} />
+            <img src={infantry} alt='Total War Warhammer Infantry' className={classes.image} />
             <div className={classes.textContainer}>
                 <Card>
                     <h1>Infantry</h1>
@@ -47,11 +47,11 @@ const Guidelines = () => {
                     <p>Calvary is probably my personal favorite unit type, especially in historical titles. In general, gaining the mobility advantage will deal a massive blow to your opponents ability to react appropriately to your plays. The downside to calvary is that they must be micromanaged appropriately as they are usually less effective in prolonged engagements than infantry. I suggest utilizing 2 - 4 units of calvary in your build if appropriate(some factions don't contain calvary units). Skirmish calvary can also be a great choose in a multitude of matchups, but they often require more control than even regular calvary to make cost effective.</p>
                 </Card>
             </div>
-            <img src={testImageFour} alt='Total War Warhammer Calvary' className={classes.image} />
+            <img src={calvary} alt='Total War Warhammer Calvary' className={classes.image} />
         </div>
 
         <div className={classes.keypairContainer}>
-            <img src={testImageFive} alt='Total War Warhammer Archers' className={classes.image} />
+            <img src={archers} alt='Total War Warhammer Archers' className={classes.image} />
             <div className={classes.textContainer}>
                 <Card>
                     <h1>Archers</h1>
@@ -67,7 +67,7 @@ const Guidelines = () => {
                     <p>Now it's time for the fun units. Everyone loves a wild, raging beast crashing through a battleline or seeing a barrage of heavy artillery rain down on your opponent. Monsters and artillery may seem polar opposites, but they have a similar philosophy in army building. You usually want to take a range from 0 - 3 of each when including them in your list. Monsters and artillery typically fill a niche role (or simply look very cool), so I suggest keeping their numbers limited to ensure your army is wide enough to control the battlefield and/or protect your expensive backline units.</p>
                 </Card>
             </div>
-            <img src={testImageSix} alt='Total War Warhammer Monster' className={classes.image} />
+            <img src={monsters} alt='Total War Warhammer Monster' className={classes.image} />
         </div>
     </div>
   )
