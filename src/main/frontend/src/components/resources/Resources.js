@@ -35,13 +35,16 @@ const Resources = () => {
             </h1>
                 <ul className={classes.listContainer}>
                     <li>
-                        <a href='null'>Official Total War Discord</a>
+                        <a href='https://discord.gg/DNb2ZCDU4h' target='blank'>Dedicated Warhammer Tournament Discord</a>
                     </li>
                     <li>
-                        <a href='null'>Turin's Discord</a>
+                        <a href='https://discord.gg/pce5Xpc6MP' target='blank'>Turin Multiplayer Discord</a>
                     </li>
                     <li>
-                        <a href='null'>Official Tournament Discord</a>
+                        <a href='https://discord.gg/Vywxs5Fd7v' target='blank'>Official Heir of Carthage Server</a>
+                    </li>
+                    <li>
+                        <a href='https://discord.gg/BvyjHsr' target='blank'>Total War: Warhammer Community</a>
                     </li>
                 </ul>
         </div>
@@ -58,6 +61,9 @@ const Resources = () => {
                     </li>
                     <li>
                         <a href='https://www.twitch.tv/loremasterofsotek' target='blank'>Loremaster of Sotek</a>
+                    </li>
+                    <li>
+                        <a href='https://www.twitch.tv/thewildplaty' target='blank'>The Wild Platy</a>
                     </li>
                 </ul>
         </div>
