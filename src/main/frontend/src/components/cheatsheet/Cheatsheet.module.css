@@ -14,6 +14,7 @@ a {
 }
 
 .downloadBtn:hover {
+    cursor: pointer;
     box-shadow: 0 0.5em 0.5em -0.4em #95d3e9;
     transform: translateY(-0.25em);
     border-color: #95d3e9;
