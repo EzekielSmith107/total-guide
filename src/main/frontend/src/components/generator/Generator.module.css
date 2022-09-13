@@ -90,7 +90,7 @@ hr {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 975px) {
     .formContainer {
         width: 100vw;
         height: 100%;
@@ -109,5 +109,4 @@ hr {
         width: 100vw;
         padding-top: .5rem;
     }
-
 }

@@ -39,33 +39,49 @@ p {
     width: 75%;
 }
 
+@media screen and (max-width: 975px) {
+    p {
+        text-align: center;
+    }
+
+    .overlay {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .content {
+        height: 100vh;
+        width: 100vw;
+        margin: auto;
+    }
+
+    .homeContainer {
+        height: 100vh;
+    }
+
+}
+
 @media screen and (max-width: 600px) {
     video {
         display: none;
     }
 
-   p {
-    font-size: medium;
-    line-height: 1.5rem;
-    text-align: center;
-   }
+    p {
+        font-size: medium;
+        line-height: 1.5rem;
+    }
 
-   h1 {
-    font-size: large;
-   }
+    h1 {
+        font-size: large;
+    }
 
     .overlay {
         display: none;
     }
 
-    .content {
-        margin: auto;
-    }
-
     .homeContainer {
         height: 80vh;
     }
-
 }
 
 @media screen and (max-width: 375px) {

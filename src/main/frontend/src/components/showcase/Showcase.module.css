@@ -6,7 +6,7 @@
     height: 89vh;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 975px) {
     iframe {
         width: 100vw;
         height: 45vh;

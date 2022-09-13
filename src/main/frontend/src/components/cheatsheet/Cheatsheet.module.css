@@ -33,7 +33,7 @@ a {
     width: 75%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 975px) {
     .cheatsheetContainer {
         flex-direction: column;
         width: 100vw;
