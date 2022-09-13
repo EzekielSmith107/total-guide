@@ -35,3 +35,20 @@
 .sectionIcon {
     margin-left: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+    .resourceContainer {
+        width: 100vw;
+    }
+
+    .siteContainer {
+        width: 100vw;
+        height: fit-content;
+        justify-content: center;
+    }
+
+    .listContainer a {
+        line-height: 1.5em;
+        font-size: medium;
+    }
+}

@@ -46,6 +46,8 @@ p {
 
    p {
     font-size: medium;
+    line-height: 1.5rem;
+    text-align: center;
    }
 
    h1 {
@@ -56,4 +58,22 @@ p {
         display: none;
     }
 
+    .content {
+        margin: auto;
+    }
+
+    .homeContainer {
+        height: 80vh;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    p {
+        font-size: small;
+    }
+
+    h1 {
+        font-size: medium;
+    }
 }
