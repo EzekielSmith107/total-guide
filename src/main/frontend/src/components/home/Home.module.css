@@ -93,3 +93,15 @@ p {
         font-size: medium;
     }
 }
+
+@media screen and (min-width: 2000px) {
+    .content {
+        width: 75%;
+    }
+
+    .homeContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -19,3 +19,10 @@
         padding-bottom: .5rem;
     }
 }
+
+@media screen and (min-width: 2000px) {
+    .showcaseContainer {
+        height: 100%;
+        margin-bottom: 10vh;
+    }
+}

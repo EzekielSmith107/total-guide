@@ -41,8 +41,6 @@
         width: 100vw;
     }
 
-    
-
     .listContainer a {
         font-size: medium;
     }
@@ -57,5 +55,20 @@
 
     .listContainer a {
         line-height: 1.5em;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .resourceContainer {
+        height: 100%;
+        margin-bottom: 10vh;
+    }
+
+    .siteContainer {
+        width: 25%;
+    }
+
+    .introContainer {
+        width: 80%;
     }
 }
