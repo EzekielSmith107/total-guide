@@ -5,3 +5,17 @@
     flex-direction: column;
     height: 89vh;
 }
+
+@media screen and (max-width: 600px) {
+    iframe {
+        width: 95vw;
+        height: 75vh;
+    }
+    
+    .showcaseContainer {
+        height: 100%;
+        width: 100vw;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+}
