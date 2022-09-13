@@ -1,5 +1,6 @@
 import React from "react";
 
+import Sidebar from "./components/sidebar/Sidebar";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import Guidelines from "./components/guidelines/Guidelines";
@@ -11,6 +12,7 @@ import Resources from "./components/resources/Resources";
 function App() {
   return (
     <div>
+      <Sidebar />
       <Navbar />
       <Home />
       <Guidelines />
