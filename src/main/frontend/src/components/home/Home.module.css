@@ -38,3 +38,22 @@ p {
 .welcomeMessage {
     width: 75%;
 }
+
+@media screen and (max-width: 600px) {
+    video {
+        display: none;
+    }
+
+   p {
+    font-size: medium;
+   }
+
+   h1 {
+    font-size: large;
+   }
+
+    .overlay {
+        display: none;
+    }
+
+}

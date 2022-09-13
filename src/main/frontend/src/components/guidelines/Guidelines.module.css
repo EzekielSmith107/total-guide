@@ -35,3 +35,26 @@ span {
     width: 100%;
     margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+    .guidelineContainer {
+        width: 100vw;
+    }
+
+    .textContainer {
+        padding: .5rem .5rem;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .image {
+        padding: .5rem .5rem;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .keypairContainer {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+}

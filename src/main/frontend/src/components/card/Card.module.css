@@ -24,3 +24,14 @@
 	border-radius: inherit;
 	background: linear-gradient(to left, #2e74b7, #95d3e9);
 }
+
+@media screen and (max-width: 600px) {
+	.border {
+		padding: .3rem;
+		border: 3px solid;
+	}
+
+	.border::before {
+		margin: -3px;
+	}
+}
