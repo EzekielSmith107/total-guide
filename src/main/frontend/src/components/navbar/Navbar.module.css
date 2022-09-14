@@ -83,4 +83,9 @@ nav {
     .navMenu {
         display: none;
     }
+
+    .navLogo {
+        padding-right: 40%;
+        font-size: 1.3rem;
+    }
 }
