@@ -1,7 +1,6 @@
 import React from "react";
 
-import Sidebar from "./components/sidebar/Sidebar";
-import Navbar from "./components/navbar/Navbar";
+import NavigationFunc from "./components/navigationFunc/NavigationFunc";
 import Home from "./components/home/Home";
 import Guidelines from "./components/guidelines/Guidelines";
 import Cheatsheet from "./components/cheatsheet/Cheatsheet";
@@ -12,8 +11,7 @@ import Resources from "./components/resources/Resources";
 function App() {
   return (
     <div>
-      <Sidebar />
-      <Navbar />
+      <NavigationFunc />
       <Home />
       <Guidelines />
       <Cheatsheet />

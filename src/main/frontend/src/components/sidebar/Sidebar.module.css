@@ -1,9 +1,9 @@
-.aside {
+.sidebarContainer {
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #0d0d0d;
+    background: #181d2a;
     display: grid;
     align-items: center;
     top: 0;
@@ -31,6 +31,13 @@
     color: white;
 }
 
+.sidebarMenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 80px);
+    text-align: center;
+}
+
 .sidebarLink {
     display: flex;
     align-items: center;
@@ -43,7 +50,8 @@
     cursor: pointer;
 }
 
-.sidebarLink:hover {
-    color: #95d3e9;
-    transition: 0.2s ease-in-out;
+@media screen and (max-width: 480px) {
+    .sidebarMenu {
+        grid-template-rows: repeat(6, 60px);
+    }
 }
