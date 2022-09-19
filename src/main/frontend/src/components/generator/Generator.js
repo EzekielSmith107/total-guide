@@ -13,7 +13,7 @@ const Generator = () => {
         const headers = {
             'Content-Type': 'application/json'
         }
-        await fetch(`http://localhost:3000/builds/image?faction=${faction}&opponent=${opponent}`, {
+        await fetch(`/builds/image?faction=${faction}&opponent=${opponent}`, {
             method: "GET",
             headers: headers
         })
